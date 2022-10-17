@@ -1,5 +1,5 @@
 # Card
-Cartão com tema pixel game em Js, Html e Css para você saber um pouco mais sobre mim
+Card feito em Js, Html e Css para você saber um pouco mais sobre mim!:smiley:
 
 https://harukaionasao.github.io/Card/
 
