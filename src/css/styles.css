@@ -1,0 +1,138 @@
+body {
+    background-image: url(../img/mario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao {
+    width: 370px;
+    border: 2px solid #00ffff;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.cartao .minhas-informacoes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img {
+    border: 1px solid #00ffff;
+}
+
+.cartao .minhas-informacoes .nome {
+    font-size: 26px;
+    color: #00FF00;
+}
+
+.cartao .minhas-informacoes .cargo {
+    font-size: 20px;
+    color: #00FF00;
+}
+
+.cartao .conteudo {
+    margin-top: 15px;
+}
+
+.cartao .abas {
+    display: flex;
+}
+
+.cartao .abas .aba {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img {
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado {
+    background-color: #262626;
+}
+
+.cartao .informacoes-abas {
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover {
+    background-color:	#2b3b37;
+}
+
+.informacoes-abas .informacao {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado {
+    display: block;
+}
+
+.informacoes-abas .sub-titulo {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    color:		#00FF7F;
+}
+
+.informacoes-abas .descricao {
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+    color: 		#00FF7F;
+}
+
+.informacoes-abas .descricao span {
+    color: #00ffff;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a {
+    background-color: aqua;
+    width: 250px;
+    display: block;
+    color: #00FF7F;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.redes-sociais .github {
+    background-color: black;
+}
+
+.redes-sociais .linkedin {
+    background-color: #1affff;
+    color: aliceblue;
+}
+
+.redes-sociais li a:hover {
+    opacity: 0.8;
+}
