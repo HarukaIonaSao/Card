@@ -13,7 +13,24 @@
     <link rel="stylesheet" href="./src/css/styles.css">
     <title>Pocket Portifólio</title>
 </head>
+
 <body>
+    <!--- Tradutor Libras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+<!--- Plugin Acessibilidade--->
+    <script>(function (d) { var s = d.createElement("script"); s.setAttribute("data-account", "GXu4TnQ4yd"); s.setAttribute("src", "https://cdn.userway.org/widget.js"); (d.body || d.head).appendChild(s); })(document)</script>
+    <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website
+            accessibility</a></noscript>
     <main class="cartao">
         <div class="minhas-informacoes">
             <img src="./src/img/perfil.png" alt="Foto de perfil de Roberta Ribeiro sorrindo">
@@ -24,8 +41,7 @@
         <div class="conteudo">
             <ul class="abas">
                 <li class="aba selecionado" id="sobre-mim">
-                    <img src="./src/img/WiCJ.gif"
-                        alt="gif do picachu dando tchau">
+                    <img src="./src/img/WiCJ.gif" alt="gif do picachu dando tchau">
                 </li>
                 <li class="aba" id="minhas-redes">
                     <img src="./src/img/6nA (1).gif" alt="ìcone de pokémon andando">
@@ -70,4 +86,5 @@
 
     <script src="./src/js/index.js"></script>
 </body>
+
 </html>
